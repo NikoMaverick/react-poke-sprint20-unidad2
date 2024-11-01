@@ -18,6 +18,27 @@
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
+.spinner {
+  width: 35px;
+  height: 35px;
+  border: 5px solid white;
+  border-radius: 50%;
+  border-right-color: red;
+  animation: rotate 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+
+  }
+}
+
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
